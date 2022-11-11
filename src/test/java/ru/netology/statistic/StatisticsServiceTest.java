@@ -35,8 +35,8 @@ public class StatisticsServiceTest {
     void findMaxLastMonth() {
         StatisticsService service = new StatisticsService();
 
-        long[] incomesInBillions = {12, 5, 8, 4, 5, 3, 8, 6, 13, 11, 15};
-        long expected = 15;
+        long[] incomesInBillions = {12, 5, 8, 4, 5, 3, 8, 6, 13, 11, 16};
+        long expected = 16;
 
         long actual = service.findMax(incomesInBillions);
         assertEquals(expected, actual);
